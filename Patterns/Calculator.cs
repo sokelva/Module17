@@ -15,7 +15,8 @@ public static class Calculator
         {
             account.Interest = new AccountOrdinary().CalculateAccountOrdinary(account);
         }
-        else if (account.Type == "Зарплатный")
+        
+        if (account.Type == "Зарплатный")
         {
             account.Interest = new AccountSalary().CalculateAccountSalary(account);
         }

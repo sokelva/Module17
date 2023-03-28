@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Patterns
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Account account = new Account();
+            Calculator.CalculateInterest(account);
         }
     }
 }
